@@ -2,7 +2,7 @@
 
 ## Live demo
 
-**[Open the public website](https://gas-man-fuel-demo.strataworks-0552.chatgpt.site/)** — no login required.
+**[Open the public GitHub Pages website](https://jamesshealy109-sudo.github.io/gas-man-fuel-demo/)** — no login required.
 
 This sales demo shows how The Gas Man can replace a disconnected website/Jotform workflow with one customer and operations platform. The core change is simple: **Customer joins. Payment confirms. Membership activates. Done.**
 
@@ -59,7 +59,7 @@ npm run build
 
 ## Deployment
 
-The project is configured for OpenAI Sites and Cloudflare D1. It can also be adapted to Vercel by replacing the Cloudflare D1 data adapter with an HTTP-accessible PostgreSQL provider and keeping the same schema/service boundaries. Configure all production payment, auth, email, analytics, and database values in the deployment secret manager.
+The public sales demo is deployed from `/docs` with GitHub Pages. It is a static, client-side presentation of the full customer and operations experience, so its forms and payment confirmation are clearly simulated and do not store data. The source application retains the Cloudflare D1, payment-webhook, and protected-route architecture for a production-capable server deployment. Configure all production payment, auth, email, analytics, and database values in the chosen deployment secret manager.
 
 ## Screenshots
 
