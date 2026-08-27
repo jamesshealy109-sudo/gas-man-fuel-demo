@@ -1,0 +1,4 @@
+export type PaymentIntent={id:string;status:"processing"|"succeeded"|"failed";amountCents:number};
+export interface PaymentProvider{createAndConfirm(input:{membershipId:string;amountCents:number;demoOutcome:"success"|"failure"}):Promise<PaymentIntent>;verifyWebhook(raw:string,signature:string|null):Promise<boolean>}
+export class DemoPaymentProvider implements PaymentProvider{async createAndConfirm(input:{membershipId:string;amountCents:number;demoOutcome:"success"|"failure"}){return{id:`pay_demo_${crypto.randomUUID().replaceAll("-","")}`,status:input.demoOutcome==="success"?"succeeded":"failed",amountCents:input.amountCents} as PaymentIntent}async verifyWebhook(_raw:string,signature:string|null){if(process.env.NODE_ENV!=="production"&&signature==="demo-webhook-signature")return true;return signature===process.env.PAYMENT_WEBHOOK_SECRET&&Boolean(signature)}}
+export const payments:PaymentProvider=new DemoPaymentProvider();

@@ -1,0 +1,41 @@
+PRAGMA foreign_keys = ON;
+INSERT OR REPLACE INTO membership_plans (id,slug,name,monthly_price_cents,included_vehicles,included_fill_ups,active,created_at,updated_at) VALUES
+('cruise-control','cruise-control','Cruise Control',3000,1,4,1,'2026-08-01T00:00:00.000Z','2026-08-01T00:00:00.000Z'),
+('fast-lane','fast-lane','Fast Lane',4000,2,6,1,'2026-08-01T00:00:00.000Z','2026-08-01T00:00:00.000Z');
+INSERT OR REPLACE INTO lead_sources (id,name,created_at,updated_at) VALUES ('lead-google','Google','2026-08-01T00:00:00.000Z','2026-08-01T00:00:00.000Z'),('lead-facebook','Facebook','2026-08-01T00:00:00.000Z','2026-08-01T00:00:00.000Z'),('lead-referral','Referral','2026-08-01T00:00:00.000Z','2026-08-01T00:00:00.000Z'),('lead-website','Website','2026-08-01T00:00:00.000Z','2026-08-01T00:00:00.000Z');
+INSERT OR REPLACE INTO customers (id,first_name,last_name,email,phone,lead_source_id,tags,last_activity_at,created_at,updated_at) VALUES
+('customer-001','Avery','Carter','avery.carter@example.com','(803) 555-1000','lead-google','["Residential","Demo"]','2026-08-27T14:17:00.000Z','2026-08-27T14:16:00.000Z','2026-08-27T14:17:00.000Z'),
+('customer-002','Jordan','Brooks','jordan.brooks@example.com','(803) 555-1001','lead-facebook','["Demo"]','2026-08-27T13:42:00.000Z','2026-08-27T13:41:00.000Z','2026-08-27T13:42:00.000Z'),
+('customer-003','Morgan','Ellis','morgan.ellis@example.com','(803) 555-1002','lead-referral','["Fleet","Demo"]','2026-08-27T12:17:00.000Z','2026-08-27T12:16:00.000Z','2026-08-27T12:17:00.000Z'),
+('customer-004','Riley','Bennett','riley.bennett@example.com','(803) 555-1003','lead-website','["Demo"]','2026-08-26T16:42:00.000Z','2026-08-26T16:41:00.000Z','2026-08-26T16:42:00.000Z'),
+('customer-005','Casey','Foster','casey.foster@example.com','(803) 555-1004','lead-google','["Demo"]','2026-08-25T15:17:00.000Z','2026-08-25T15:16:00.000Z','2026-08-25T15:17:00.000Z'),
+('customer-006','Taylor','Morgan','taylor.morgan@example.com','(803) 555-1005','lead-facebook','["Demo"]','2026-08-24T14:42:00.000Z','2026-08-24T14:41:00.000Z','2026-08-24T14:42:00.000Z'),
+('customer-007','Cameron','Hayes','cameron.hayes@example.com','(803) 555-1006','lead-referral','["Demo"]','2026-08-23T13:17:00.000Z','2026-08-23T13:16:00.000Z','2026-08-23T13:17:00.000Z'),
+('customer-008','Parker','Reed','parker.reed@example.com','(803) 555-1007','lead-website','["Demo"]','2026-08-22T12:42:00.000Z','2026-08-22T12:41:00.000Z','2026-08-22T12:42:00.000Z'),
+('customer-009','Quinn','Stewart','quinn.stewart@example.com','(803) 555-1008','lead-google','["Demo"]','2026-08-21T11:17:00.000Z','2026-08-21T11:16:00.000Z','2026-08-21T11:17:00.000Z'),
+('customer-010','Jamie','Collins','jamie.collins@example.com','(803) 555-1009','lead-facebook','["Boat","Demo"]','2026-08-20T10:42:00.000Z','2026-08-20T10:41:00.000Z','2026-08-20T10:42:00.000Z'),
+('customer-011','Drew','Parker','drew.parker@example.com','(803) 555-1010','lead-referral','["Demo"]','2026-08-19T14:17:00.000Z','2026-08-19T14:16:00.000Z','2026-08-19T14:17:00.000Z'),
+('customer-012','Emerson','Bell','emerson.bell@example.com','(803) 555-1011','lead-website','["Demo"]','2026-08-18T13:42:00.000Z','2026-08-18T13:41:00.000Z','2026-08-18T13:42:00.000Z'),
+('customer-013','Skyler','Grant','skyler.grant@example.com','(803) 555-1012','lead-google','["Demo"]','2026-08-17T12:17:00.000Z','2026-08-17T12:16:00.000Z','2026-08-17T12:17:00.000Z'),
+('customer-014','Reese','Murphy','reese.murphy@example.com','(803) 555-1013','lead-facebook','["Demo"]','2026-08-16T11:42:00.000Z','2026-08-16T11:41:00.000Z','2026-08-16T11:42:00.000Z'),
+('customer-015','Finley','Ward','finley.ward@example.com','(803) 555-1014','lead-referral','["Demo"]','2026-08-15T10:17:00.000Z','2026-08-15T10:16:00.000Z','2026-08-15T10:17:00.000Z'),
+('customer-016','Alexis','Price','alexis.price@example.com','(803) 555-1015','lead-website','["Demo"]','2026-08-14T15:42:00.000Z','2026-08-14T15:41:00.000Z','2026-08-14T15:42:00.000Z'),
+('customer-017','Rowan','Kelly','rowan.kelly@example.com','(803) 555-1016','lead-google','["Demo"]','2026-08-13T14:17:00.000Z','2026-08-13T14:16:00.000Z','2026-08-13T14:17:00.000Z'),
+('customer-018','Hayden','Ross','hayden.ross@example.com','(803) 555-1017','lead-facebook','["Demo"]','2026-08-12T13:42:00.000Z','2026-08-12T13:41:00.000Z','2026-08-12T13:42:00.000Z'),
+('customer-019','Blair','Jenkins','blair.jenkins@example.com','(803) 555-1018','lead-referral','["Demo"]','2026-08-11T12:17:00.000Z','2026-08-11T12:16:00.000Z','2026-08-11T12:17:00.000Z'),
+('customer-020','Dakota','Perry','dakota.perry@example.com','(803) 555-1019','lead-website','["Demo"]','2026-08-10T11:42:00.000Z','2026-08-10T11:41:00.000Z','2026-08-10T11:42:00.000Z'),
+('customer-021','Sage','Turner','sage.turner@example.com','(803) 555-1020','lead-google','["Demo"]','2026-08-09T10:17:00.000Z','2026-08-09T10:16:00.000Z','2026-08-09T10:17:00.000Z'),
+('customer-022','Marley','Cooper','marley.cooper@example.com','(803) 555-1021','lead-facebook','["Demo"]','2026-08-08T15:42:00.000Z','2026-08-08T15:41:00.000Z','2026-08-08T15:42:00.000Z'),
+('customer-023','Kendall','Bailey','kendall.bailey@example.com','(803) 555-1022','lead-referral','["Demo"]','2026-08-07T14:17:00.000Z','2026-08-07T14:16:00.000Z','2026-08-07T14:17:00.000Z'),
+('customer-024','Robin','Hughes','robin.hughes@example.com','(803) 555-1023','lead-website','["Demo"]','2026-08-06T13:42:00.000Z','2026-08-06T13:41:00.000Z','2026-08-06T13:42:00.000Z'),
+('customer-025','Lane','Bryant','lane.bryant@example.com','(803) 555-1024','lead-google','["Demo"]','2026-08-05T12:17:00.000Z','2026-08-05T12:16:00.000Z','2026-08-05T12:17:00.000Z');
+INSERT OR REPLACE INTO addresses (id,customer_id,type,line1,city,state,zip,created_at,updated_at) SELECT 'address-'||substr(id,10),id,'service',(100+CAST(substr(id,10) AS INTEGER)*7)||' Demo Oak Way',CASE CAST(substr(id,10) AS INTEGER)%3 WHEN 0 THEN 'Columbia' WHEN 1 THEN 'Lugoff' ELSE 'Blythewood' END,'SC','29201',created_at,updated_at FROM customers;
+INSERT OR REPLACE INTO memberships (id,member_number,customer_id,plan_id,status,current_period_start,current_period_end,activated_at,created_at,updated_at) SELECT 'membership-'||substr(id,10),'GM-2026-'||printf('%06d',1000+CAST(substr(id,10) AS INTEGER)),id,CASE WHEN CAST(substr(id,10) AS INTEGER)%3=0 THEN 'fast-lane' ELSE 'cruise-control' END,CASE WHEN CAST(substr(id,10) AS INTEGER)<=20 THEN 'active' WHEN CAST(substr(id,10) AS INTEGER)<=22 THEN 'pending_payment' WHEN CAST(substr(id,10) AS INTEGER)<=24 THEN 'past_due' ELSE 'canceled' END,created_at,'2026-09-27T14:17:00.000Z',CASE WHEN CAST(substr(id,10) AS INTEGER)<=20 THEN updated_at ELSE NULL END,created_at,updated_at FROM customers;
+INSERT OR REPLACE INTO payments (id,membership_id,provider,external_payment_id,amount_cents,currency,status,error_message,processed_at,created_at,updated_at) SELECT 'payment-'||substr(id,12),id,'demo','pay_demo_'||substr(id,12),CASE WHEN plan_id='fast-lane' THEN 4000 ELSE 3000 END,'usd',CASE WHEN status='active' THEN 'succeeded' WHEN status='pending_payment' THEN 'processing' WHEN status='past_due' THEN 'failed' ELSE 'canceled' END,CASE WHEN status='past_due' THEN 'Demo decline' ELSE NULL END,updated_at,created_at,updated_at FROM memberships;
+INSERT OR REPLACE INTO service_requests (id,customer_id,name,email,phone,address,request_type,preferred_date,notes,status,created_at,updated_at) VALUES
+('request-1048','customer-001','Avery Carter','avery.carter@example.com','(803) 555-1000','118 Demo Oak Way, Columbia, SC','Pit Stop fill-up','2026-08-28','Demo request','new','2026-08-27T14:30:00.000Z','2026-08-27T14:30:00.000Z'),
+('request-1047','customer-003','Morgan Ellis','morgan.ellis@example.com','(803) 555-1002','132 Demo Oak Way, Columbia, SC','Fleet consultation','2026-08-29','Demo request','contacted','2026-08-27T13:30:00.000Z','2026-08-27T13:45:00.000Z'),
+('request-1046','customer-009','Quinn Stewart','quinn.stewart@example.com','(803) 555-1008','174 Demo Oak Way, Columbia, SC','Member delivery','2026-08-27','Demo request','scheduled','2026-08-26T16:30:00.000Z','2026-08-26T17:00:00.000Z'),
+('request-1045','customer-010','Jamie Collins','jamie.collins@example.com','(803) 555-1009','181 Demo Oak Way, Lugoff, SC','Boat fill-up','2026-08-26','Demo request','completed','2026-08-25T15:30:00.000Z','2026-08-26T17:00:00.000Z');
+PRAGMA optimize;
+
