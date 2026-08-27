@@ -1,5 +1,9 @@
 # The Gas Man Fuel — Website & Membership Platform Demo
 
+## Live demo
+
+**[Open the public website](https://gas-man-fuel-demo.strataworks-0552.chatgpt.site/)** — no login required.
+
 This sales demo shows how The Gas Man can replace a disconnected website/Jotform workflow with one customer and operations platform. The core change is simple: **Customer joins. Payment confirms. Membership activates. Done.**
 
 ## Features
@@ -73,4 +77,3 @@ Use the deployed Home, Join, confirmation, Admin, Portal, and Current vs. Propos
 ## Roadmap
 
 Production customer authentication, email/SMS notifications, QuickBooks/accounting sync, dispatch and route scheduling, tank monitoring, automatic delivery, invoices, ACH, saved methods, fleet accounts, promotions, referral tracking, ad attribution, review requests, and customer segmentation.
-
